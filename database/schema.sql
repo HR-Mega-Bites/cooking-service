@@ -9,11 +9,19 @@ CREATE TABLE recipes(
 INSERT INTO recipes (info) VALUES
   (
     '{
-      "recipe": {
+      "recipe": [
+        {
         "step": 1,
-        "title": "cheesesteak",
+        "title": "season",
         "photo":  "https://cook.ba/2INgFln",
         "instruction": "Preheat the oven to 450°F. Wash and dry the fresh produce. Cut the potatoes lengthwise into 1/4-inch-thick sticks. Cut off and discard the bottom 1/2 inch of the broccoli stem; cut the broccoli into large florets. Combine in a large bowl."
-      }
+        },
+        {
+        "step": 2,
+        "title": "bake",
+        "photo":  "https://cook.ba/2INgFln",
+        "instruction": "Preheat the oven to 450°F. Wash and dry the fresh produce. Cut the potatoes lengthwise into 1/4-inch-thick sticks. Cut off and discard the bottom 1/2 inch of the broccoli stem; cut the broccoli into large florets. Combine in a large bowl."
+        }
+      ]
     }'
 );
