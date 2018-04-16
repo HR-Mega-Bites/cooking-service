@@ -20,13 +20,18 @@ const createFakeData = () => {
       step++;
       recipe.push(instructions)
     }
-
-    client.query(`INSERT into recipes (info) VALUES('{${recipe}}')`, (err, response) => {
+    let jsonObj = {"recipe": recipe}
+    let text = `INSERT into recipes (info) VALUES($1) RETURNING *`;
+    // console.log(recipe, 'recipe');
+    console.log(jsonObj.recipe);
+    client.query(text, [jsonObj], (err, response) => {
       if(err) {
-        console.error(err)
+        console.error(err.stack);
+      } else {
+        console.log('recipe inserted');
       }
-      console.log('recipe inserted');
     });
+
   }
-createFakeData();
 }
+createFakeData();

@@ -1,9 +1,8 @@
 const pg = require('pg');
-const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/instructions';
+const connectionString = process.env.DATABASE_URL || 'postgres://localhost/instructions';
 
 const client = new pg.Client(connectionString);
 
 client.connect();
 
-
-model.exports = client;
+module.exports = client;
