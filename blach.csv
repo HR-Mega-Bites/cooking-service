@@ -1,9 +1,0 @@
-dbms    | table_catalog | table_schema | table_name | column_name | ordinal_position | data_type | character_maximum_length | con
-straint_type | table_schema | table_name | column_name
-------------+---------------+--------------+------------+-------------+------------------+-----------+--------------------------+----
--------------+--------------+------------+-------------
- postgresql | instructions  | public       | recipes    | info        |                2 | json      |                          |
-             |              |            |
- postgresql | instructions  | public       | recipes    | id          |                1 | integer   |                          | PRI
-MARY KEY     |              |            |
-(2 rows)
