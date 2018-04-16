@@ -9,4 +9,4 @@ const query = client.query(
 );
 query.on('end', () => {client.end(); });
 
-model.exports = client;
+module.exports = client;
