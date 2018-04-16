@@ -1,6 +1,8 @@
 DROP DATABASE IF EXISTS "instructions";
 CREATE DATABASE "instructions";
+
 \connect instructions;
+
 CREATE TABLE recipes(
   id SERIAL PRIMARY KEY,
   info JSON NOT NULL
