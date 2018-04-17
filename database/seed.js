@@ -20,8 +20,8 @@ const createFakeData = () => {
       step++;
       recipe.push(instructions)
     }
-    let jsonObj = {"recipe": recipe}
-    let text = `INSERT into recipes (info) VALUES($1) RETURNING *`;
+  let jsonObj = {"recipe": recipe};
+  let text = `INSERT into recipes (info) VALUES($1) RETURNING *`;
     // console.log(recipe, 'recipe');
     console.log(jsonObj.recipe);
     client.query(text, [jsonObj], (err, response) => {
@@ -29,9 +29,9 @@ const createFakeData = () => {
         console.error(err.stack);
       } else {
         console.log('recipe inserted');
-      }
+    }
     });
 
-  }
+}
 }
 createFakeData();
