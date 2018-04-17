@@ -6,10 +6,9 @@ const insertData = () => {
 
 const createFakeData = () => {
   for(let i = 0; i <= 100; i++) {
-  const steps = Math.floor(Math.random() * 15) + 4;
-  let step = 1;
-  const recipe = [];
-  console.log(steps);
+    const steps = Math.floor(Math.random() * 15) + 4;
+    let step = 1;
+    const recipe = [];
 
   while(step <= steps) {
       let instructions = {};
@@ -18,20 +17,19 @@ const createFakeData = () => {
       instructions.photo = faker.image.food();
       instructions.instruction = faker.lorem.paragraph();
       step++;
-      recipe.push(instructions)
+      recipe.push(instructions);
     }
+    
   let jsonObj = {"recipe": recipe};
   let text = `INSERT into recipes (info) VALUES($1) RETURNING *`;
-    // console.log(recipe, 'recipe');
-    console.log(jsonObj.recipe);
     client.query(text, [jsonObj], (err, response) => {
       if(err) {
         console.error(err.stack);
       } else {
         console.log('recipe inserted');
-    }
+      }
     });
 
-}
+  }
 }
 createFakeData();
