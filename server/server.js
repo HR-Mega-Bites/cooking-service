@@ -1,8 +1,7 @@
 const express = require('express');
 const path = require('path');
 const axios = require('axios');
-const bodparser = require('body-parser');
-// const db = require('../database/index.js');
+const bodyparser = require('body-parser');
 
 const app = express();
 
