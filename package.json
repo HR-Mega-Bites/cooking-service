@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "Mega Bites",
   "version": "",
   "description": "",
   "author": "Laurent Frazier",
@@ -12,11 +12,10 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-=======
-  "scripts": {
-    "react-dev": "webpack -d --watch",
-    "start": "nodemon server/server.js"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "scripts": {
+      "react-dev": "webpack -d --watch",
+      "start": "nodemon server/server.js"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -30,6 +29,5 @@
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.14"
->>>>>>> ed9380362e1ca59653cacf92b17ef1f27cd7d19a
   }
 }
