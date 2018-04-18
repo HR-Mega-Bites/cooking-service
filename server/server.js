@@ -1,7 +1,11 @@
 const express = require('express');
 const path = require('path');
 const axios = require('axios');
+<<<<<<< HEAD
 const bodyParser = require('body-parser');
+=======
+const bodyparser = require('body-parser');
+>>>>>>> 8d841ec295253037850d747731b09b6b91165ee9
 
 const app = express();
 
