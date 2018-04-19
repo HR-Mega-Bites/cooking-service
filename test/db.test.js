@@ -24,6 +24,18 @@ describe('Database', () =>{
         expect(record).toBe(9);
         done();
       }
-    })
+    });
   })
+  it('should return undefined if the record id does not exist', (done) => {
+    db.client.query(`SELECT * from recipes where id = 200`, (err, res) => {
+      if(err) {
+        var error = err
+      } else {
+        var record = res.Result;
+        console.log(record);
+        expect(record).toBe(undefined);
+        done();
+      }
+    })
+  });
 })

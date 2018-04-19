@@ -27,3 +27,4 @@ app.get('/recipe', (req, res) => {
 const port = 3100;
 
 app.listen(port, () => console.log('listening on port ', port));
+module.exports.app = app
