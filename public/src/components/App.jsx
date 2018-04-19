@@ -10,11 +10,14 @@ class App extends React.Component {
     this.getRecipe = this.getRecipe.bind(this)
   };
   getRecipe() {
-    Axios.get('http://127.0.0.1:3100/recipe')
+    Axios.get('http://127.0.0.1:3300/recipe')
     .then((res) => {
-      console.log('this is the response', res.data);
+      this.setState({
+        recipe: res.data.recipe
+      });
     })
-
+    // .then(console.log('resonse is here', response))
+    console.log('i was clicked')
   }
   render() {
     return (
