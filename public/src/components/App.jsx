@@ -7,8 +7,9 @@ class App extends React.Component {
     this.state = {
       recipe: []
     };
-    this.getRecipe = this.getRecipe.bind(this)
+    this.getRecipe = this.getRecipe.bind(this);
   };
+
   getRecipe() {
     Axios.get('http://127.0.0.1:3300/recipe')
     .then((res) => {
