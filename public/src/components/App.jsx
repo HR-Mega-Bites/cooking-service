@@ -3,7 +3,7 @@ import Axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       recipe: []
     };
