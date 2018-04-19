@@ -1,14 +1,12 @@
-// import React from 'react';
-// import ReactDom from 'react-dom';
-// import App from './component/App';
-//
-// ReactDom.render(<App />, getElementById('app'))
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
+import App from './components/App';
 
 const title = 'My Minimal React Webpack Babel Setup';
 
-ReactDOM.render(
-  <div>bullshit</div>,
+ReactDom.render(
+  <div>
+    <App />
+  </div>,
   document.getElementById('app')
 );
