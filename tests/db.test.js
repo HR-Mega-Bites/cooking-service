@@ -1,8 +1,8 @@
 const db = require('../database/index.js')
 
-describe('Database', () =>{
+describe('Database',() => {
 
-  it('should retrive all records in the database', (done) => {
+  it('should retrieve all records in the database', (done) => {
     db.client.query(`SELECT * from recipes`, (err, res) => {
       if(err) {
         throw err
@@ -14,10 +14,11 @@ describe('Database', () =>{
       }
     });
   });
+
   it('should return a single record when given an id', (done) => {
     db.client.query(`SELECT * from recipes where id = 9`, (err, res) => {
       if(err) {
-        throw err
+        throw err;
       } else {
         var record = res.rows[0].id;
         console.log(record);
@@ -25,11 +26,12 @@ describe('Database', () =>{
         done();
       }
     });
-  })
+  });
+
   it('should return undefined if the record id does not exist', (done) => {
     db.client.query(`SELECT * from recipes where id = 200`, (err, res) => {
       if(err) {
-        var error = err
+        throw err;
       } else {
         var record = res.Result;
         console.log(record);
@@ -38,4 +40,4 @@ describe('Database', () =>{
       }
     })
   });
-})
+});
