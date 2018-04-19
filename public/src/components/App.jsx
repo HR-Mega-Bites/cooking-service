@@ -12,10 +12,9 @@ class App extends React.Component {
   getRecipe() {
     Axios.get('http://127.0.0.1:3100/recipe')
     .then((res) => {
-      console.log(res);
+      console.log('this is the response', res.data);
     })
-    // .then(console.log('resonse is here', response))
-    console.log('i was clicked')
+
   }
   render() {
     return (

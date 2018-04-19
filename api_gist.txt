@@ -1,0 +1,53 @@
+/GET 'recipe/4'
+
+Result:
+
+{step: "Step 1:", title: "quo-et-quo", photo: "http://lorempixel.com/640/480/food", instruction: "Itaque unde enim dolorum corrupti pariatur similiq…fugit necessitatibus dolorum assumenda aut omnis."}
+1
+:
+{step: "Step 2:", title: "sint-dolore-necessitatibus", photo: "http://lorempixel.com/640/480/food", instruction: "Magnam nostrum dolorum dolor rerum. Rem eaque prov…ere sit laboriosam fuga quia voluptatem voluptas."}
+2
+:
+{step: "Step 3:", title: "provident-exercitationem-error", photo: "http://lorempixel.com/640/480/food", instruction: "Sed sapiente saepe natus explicabo. Fugiat invento…ucimus corrupti beatae aut deserunt id rerum sed."}
+3
+:
+{step: "Step 4:", title: "cum-odit-vel", photo: "http://lorempixel.com/640/480/food", instruction: "Consequatur magni sed officia sequi debitis. Est e…um facere neque. Fuga sit sed voluptatem tempora."}
+4
+:
+{step: "Step 5:", title: "optio-facere-ut", photo: "http://lorempixel.com/640/480/food", instruction: "Voluptas omnis commodi ut occaecati nisi ipsam adi…am fugiat sit ipsum omnis ea delectus voluptates."}
+5
+:
+{step: "Step 6:", title: "sed-omnis-cum", photo: "http://lorempixel.com/640/480/food", instruction: "Iusto quia libero quia nam nostrum repellendus. Eo…t et qui aut quod rerum et nemo suscipit numquam."}
+6
+:
+{step: "Step 7:", title: "nisi-iusto-minus", photo: "http://lorempixel.com/640/480/food", instruction: "Ut maxime ipsam tempora in asperiores itaque. Quia…saepe magni laudantium molestias ipsa odit ullam."}
+7
+:
+{step: "Step 8:", title: "nihil-odit-neque", photo: "http://lorempixel.com/640/480/food", instruction: "Aut officia neque quidem. Consequatur neque molest… blanditiis deserunt non consequuntur laudantium."}
+8
+:
+{step: "Step 9:", title: "voluptatibus-recusandae-et", photo: "http://lorempixel.com/640/480/food", instruction: "Nam sed dolorem vel molestiae rerum voluptatem est…epellat animi commodi dignissimos magnam tempora."}
+9
+:
+{step: "Step 10:", title: "ipsum-voluptatem-sit", photo: "http://lorempixel.com/640/480/food", instruction: "Est odit excepturi et magnam libero exercitationem…amet deleniti autem quaerat ut perferendis minus."}
+10
+:
+{step: "Step 11:", title: "repudiandae-quibusdam-rerum", photo: "http://lorempixel.com/640/480/food", instruction: "Doloremque eos assumenda omnis qui maiores ut. Non…ti. Consequuntur rerum perferendis sint et ipsam."}
+11
+:
+{step: "Step 12:", title: "sunt-ratione-sint", photo: "http://lorempixel.com/640/480/food", instruction: "Natus ad asperiores adipisci natus consectetur. Qu… numquam sit ea culpa ab. Autem rerum ipsum quia."}
+12
+:
+{step: "Step 13:", title: "qui-quos-omnis", photo: "http://lorempixel.com/640/480/food", instruction: "Quia et explicabo. Non est fuga dicta laboriosam aut nisi et soluta eaque. Quas officia libero."}
+13
+:
+{step: "Step 14:", title: "qui-eligendi-in", photo: "http://lorempixel.com/640/480/food", instruction: "Deserunt sit nobis magnam suscipit earum sint odit…rovident ut temporibus fugiat accusantium vel et."}
+14
+:
+{step: "Step 15:", title: "et-inventore-blanditiis", photo: "http://lorempixel.com/640/480/food", instruction: "At et et voluptatum dolor nostrum ipsum repudianda…i ab earum et in sit fuga. Dignissimos quis odio."}
+15
+:
+{step: "Step 16:", title: "esse-ipsum-qui", photo: "http://lorempixel.com/640/480/food", instruction: "Fugit est quia dolorem aut est iste facere occaeca…entore tempore consectetur eos deserunt et saepe."}
+length
+:
+16
