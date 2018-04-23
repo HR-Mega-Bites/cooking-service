@@ -18,7 +18,7 @@ class App extends React.Component {
       });
     })
     // .then(console.log('resonse is here', response))
-    console.log('i was clicked')
+    console.log('i was clicked', this.state.recipe)
   }
   render() {
     return (

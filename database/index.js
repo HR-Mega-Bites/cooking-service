@@ -10,11 +10,11 @@ const getRecipe = (id, value) => {
     if(err) {
       console.error(err);
     } else {
-      var result = res.rows[0].info;
-      value.end(JSON.stringify(result));
+      var data = res.rows[0].info;
+      value.end(JSON.stringify(data));
+      // console.log('result from making query to database from db', result);
     }
   });
-  // console.log(result);
 }
 // getRecipe(2);
 module.exports.client = client;
