@@ -1,9 +1,12 @@
 import React from 'react';
 import Axios from 'axios';
+import Steps from './Steps.jsx';
+
+
 
 class App extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       recipe: []
     };
@@ -18,13 +21,14 @@ class App extends React.Component {
       });
     })
     // .then(console.log('resonse is here', response))
-    console.log('i was clicked', this.state.recipe)
+    console.log('i was clicked', )
   }
   render() {
     return (
       <div>
+        <h3>step-by-step</h3>
         <h1>Instructions</h1>
-        <h2>good boy</h2>
+        <Steps steps={this.state.recipe}/>
         <button onClick={this.getRecipe}>click me</button>
 
       </div>
