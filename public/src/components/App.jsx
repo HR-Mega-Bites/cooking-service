@@ -4,6 +4,7 @@ import Steps from './Steps.jsx';
 
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +22,7 @@ class App extends React.Component {
       });
     })
     // .then(console.log('resonse is here', response))
-    console.log('i was clicked', )
+    console.log('i was clicked')
   }
   render() {
     return (
@@ -32,6 +33,7 @@ class App extends React.Component {
         <button onClick={this.getRecipe}>click me</button>
 
       </div>
+
     )
   }
 }
