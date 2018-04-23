@@ -7,10 +7,11 @@ class App extends React.Component {
     this.state = {
       recipe: []
     };
-    this.getRecipe = this.getRecipe.bind(this)
+    this.getRecipe = this.getRecipe.bind(this);
   };
+
   getRecipe() {
-    Axios.get('http://127.0.0.1:3300/recipe')
+    Axios.get('http://127.0.0.1:3700/recipe')
     .then((res) => {
       this.setState({
         recipe: res.data.recipe
@@ -25,6 +26,7 @@ class App extends React.Component {
         <h1>Instructions</h1>
         <h2>good boy</h2>
         <button onClick={this.getRecipe}>click me</button>
+
       </div>
     )
   }

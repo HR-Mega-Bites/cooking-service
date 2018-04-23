@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
 });
 
 app.use(bodyParser.json());
-const urlencodedParser = bodyParser.urlencoded({ extended: false});
+// const urlencodedParser = bodyParser.urlencoded({ extended: false});
 
 app.get('/recipe', (req, res) => {
     db.getRecipe(4, res);
@@ -24,7 +24,7 @@ app.get('/recipe', (req, res) => {
   // }
 });
 
-const port = 3300;
+const port = 3700;
 
 app.listen(port, () => console.log('listening on port ', port));
 module.exports.app = app
