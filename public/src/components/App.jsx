@@ -26,9 +26,9 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h3>step-by-step</h3>
-        <h1>Instructions</h1>
+      <div className  = "container">
+        <h3 className = "top-title">step-by-step</h3>
+        <h1 className = "instructions-title">Instructions</h1>
         <Steps steps={this.state.recipe}/>
         <button onClick={this.getRecipe}>click me</button>
 

@@ -8,19 +8,37 @@ const Steps = (props) => (
         <Col lg={6}>
           {console.log('starting new row', step)}
           <div>
-            <img src={step.photo} />
-            <h4>{index + 1}</h4>
-            <h4>{step.title}</h4>
-            <p>{step.instruction}</p>
+            <div>
+              <img className="image" src={step.photo} />
+            </div>
+              <div className="instructions-content">
+                <div className="step-title">
+                  <span className="step-number">{index + 1}</span>
+                  <span className="step-title-title">{step.title}</span>
+                </div>
+                <p>{step.instruction}</p>
+              </div>
           </div>
         </Col>
         <Col lg={6}>
           {console.log('continuing on same row')}
-          <div>
+          {/* <div>
             <img src={props.steps[index + 1].photo} />
             <h4>{index + 2}</h4>
             <h4>{props.steps[index + 1].title}</h4>
             <p>{props.steps[index + 1].instruction}</p>
+          </div> */}
+          <div>
+            <div>
+              <img className="image" src={props.steps[index + 1].photo} />
+            </div>
+              <div className="instructions-content">
+                <div className="step-title">
+                  <span className="step-number">{index +2}</span>
+                  <span className="step-title-title">{props.steps[index + 1].title }</span>
+                </div>
+                <p>{props.steps[index + 1].instruction}</p>
+              </div>
           </div>
 
         </Col>
