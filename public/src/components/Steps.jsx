@@ -28,7 +28,7 @@ const Steps = (props) => (
             <h4>{props.steps[index + 1].title}</h4>
             <p>{props.steps[index + 1].instruction}</p>
           </div> */}
-          <div>
+          { (props.steps[index + 1])?(<div>
             <div>
               <img className="image" src={props.steps[index + 1].photo} />
             </div>
@@ -39,7 +39,7 @@ const Steps = (props) => (
                 </div>
                 <p>{props.steps[index + 1].instruction}</p>
               </div>
-          </div>
+          </div>) : (<div></div>)}
         </Col>
       </Row>)
     } else {
