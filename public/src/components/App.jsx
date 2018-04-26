@@ -15,7 +15,7 @@ class App extends React.Component {
   };
 
   getRecipe() {
-    Axios.get('http://127.0.0.1:3700/recipe')
+    Axios.get('http://127.0.0.1:3700' + document.location.pathname + 'instructions')
     .then((res) => {
       this.setState({
         recipe: res.data.recipe
