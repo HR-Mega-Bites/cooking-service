@@ -2,12 +2,18 @@ branch-defaults:
   again:
     environment: null
     group_suffix: null
+  blue:
+    environment: ebs-test-dev
   ebs:
     environment: null
     group_suffix: null
   exp:
     environment: ebs-test-dev
     group_suffix: null
+environment-defaults:
+  ebs-test-dev:
+    branch: null
+    repository: null
 global:
   application_name: ebs-test
   branch: blue
